@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./gird.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./main.js">
+    <link rel="stylesheet" href="./jquery.exzoom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Quicksand&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
@@ -111,7 +112,13 @@
                 <div class="container-row">
                     <div class="col-1">
                         <div class="col-1-img">
+                            <!-- <div class="exzoom" id="exzoom">
+                            </div>
+                            <div class="exzoom_nav"></div> -->
                             <img src="./img/product.jpeg" alt="">
+                            <a href="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
                         </div> 
                         
 
@@ -121,8 +128,8 @@
                                 <div class="col-1-mode" style="margin-top: 10px;">
                                     <h1>MÁY HỦY RÁC TEKA TR 50.4</h1>
                                     <div class="mode">
-                                            <span class="mode-product">Mã:
-                                                <span>TR-50.4</span>
+                                            <span class="mode-product" style="font-family: 'Roboto Condensed', sans-serif;">Mã:
+                                                <span style="color: #645f5f;">TR-50.4</span>
                                             </span>
                                     </div>
                                 </div>
@@ -299,10 +306,64 @@
 
                                 <div class="similar-product-4">
                                     <ul>
-                                        <li >
+                                        <li class="img-position">
                                             <a href="" >
                                                 <img  src="./img/similar1.jpeg" alt="">
                                                 <h2 class="name-similar">MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h2>
+                                                <div class="hover-img" style="right: 440px; top: 600px;">
+                                                    <div class="title-hover">
+                                                        <h3>MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h3>
+                                                    </div>
+                                                    <div class="text-hover">
+                                                        <p>Rate this product Thiết kế miệng rộng với đường kính lên đến 90mm Ép được tất cả các loại rau củ quả Động cơ lõi đồng bền bỉ, hoạt động siêu tĩnh. Ít bị oxy hóa và dẫn điện tốt hơn so với động cơ lõi nhôm. Nhờ đó vận… </p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-similar-1">
+                                                    <p class="price-similar">
+                                                        6,990,000
+                                                        <span class="price-similar-line">đ</span>
+                                                    </p>
+                                                    <span class="sale-price-similar">5,242,201
+                                                        <span class="sale-price-similar-line">đ</span>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="img-position">
+                                            <a href="">
+                                                <img src="./img/similar1.jpeg" alt="">
+                                                <h2 class="name-similar">MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h2>
+                                                <div class="hover-img" style="right: 220px; top: 600px;">
+                                                    <div class="title-hover">
+                                                        <h3>MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h3>
+                                                    </div>
+                                                    <div class="text-hover">
+                                                        <p>Rate this product Thiết kế miệng rộng với đường kính lên đến 90mm Ép được tất cả các loại rau củ quả Động cơ lõi đồng bền bỉ, hoạt động siêu tĩnh. Ít bị oxy hóa và dẫn điện tốt hơn so với động cơ lõi nhôm. Nhờ đó vận… </p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-similar-1">
+                                                    <p class="price-similar">
+                                                        6,990,000
+                                                        <span class="price-similar-line">đ</span>
+                                                    </p>
+                                                    <span class="sale-price-similar">5,242,201
+                                                        <span class="sale-price-similar-line">đ</span>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="img-position">
+                                            <a href="">
+                                                <img src="./img/similar1.jpeg" alt="">
+                                                <h2 class="name-similar">MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h2>
+                                                <div class="hover-img" style="right: 0px; top: 600px;">
+                                                    <div class="title-hover">
+                                                        <h3>MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h3>
+                                                    </div>
+                                                    <div class="text-hover">
+                                                        <p>Rate this product Thiết kế miệng rộng với đường kính lên đến 90mm Ép được tất cả các loại rau củ quả Động cơ lõi đồng bền bỉ, hoạt động siêu tĩnh. Ít bị oxy hóa và dẫn điện tốt hơn so với động cơ lõi nhôm. Nhờ đó vận… </p>
+                                                    </div>
+                                                </div>
 
                                                 <div class="price-similar-1">
                                                     <p class="price-similar">
@@ -315,42 +376,18 @@
                                                 </div>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="">
+                                        <li class="img-position">
+                                            <a href="#">
                                                 <img src="./img/similar1.jpeg" alt="">
                                                 <h2 class="name-similar">MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h2>
-
-                                                <div class="price-similar-1">
-                                                    <p class="price-similar">
-                                                        6,990,000
-                                                        <span class="price-similar-line">đ</span>
-                                                    </p>
-                                                    <span class="sale-price-similar">5,242,201
-                                                        <span class="sale-price-similar-line">đ</span>
-                                                    </span>
+                                                <div class="hover-img" style="right: -220px; top: 600px;">
+                                                    <div class="title-hover">
+                                                        <h3>MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h3>
+                                                    </div>
+                                                    <div class="text-hover">
+                                                        <p>Rate this product Thiết kế miệng rộng với đường kính lên đến 90mm Ép được tất cả các loại rau củ quả Động cơ lõi đồng bền bỉ, hoạt động siêu tĩnh. Ít bị oxy hóa và dẫn điện tốt hơn so với động cơ lõi nhôm. Nhờ đó vận… </p>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="./img/similar1.jpeg" alt="">
-                                                <h2 class="name-similar">MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h2>
-
-                                                <div class="price-similar-1">
-                                                    <p class="price-similar">
-                                                        6,990,000
-                                                        <span class="price-similar-line">đ</span>
-                                                    </p>
-                                                    <span class="sale-price-similar">5,242,201
-                                                        <span class="sale-price-similar-line">đ</span>
-                                                    </span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="./img/similar1.jpeg" alt="">
-                                                <h2 class="name-similar">MÁY ÉP CHẬM (MIỆNG RỘNG) HAFELE 535.43.531</h2>
 
                                                 <div class="price-similar-1">
                                                     <p class="price-similar">
@@ -750,10 +787,10 @@
                                         <i class="fa-solid fa-caret-right"></i>   FB<a href="">https://fb.com/bepkhanhtrang.vn</a>
                                     </li>
                                     <li>
-                                        <i class="fa-solid fa-caret-right"></i>   <a href="">ZALO: 0933.833.039</a>
+                                        <i class="fa-solid fa-caret-right"></i> ZALO:     <a href=""> 0933.833.039</a>
                                     </li>
                                     <li>
-                                        <i class="fa-solid fa-caret-right"></i>   <a href="">HOT LINE: 0933.833.039</a>
+                                        <i class="fa-solid fa-caret-right"></i>  HOT LINE: <a href=""> 0933.833.039</a>
                                     </li>
                                 </ul>
                             </div>
@@ -843,5 +880,17 @@
         </div>
 
     </div>
+<!--     
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jquery.exzoom.js"></script>
+    <script src="text/javascript">
+        $(function(){
+
+        $("#exzoom").exzoom({
+
+        });
+        });
+    </script> -->
+
 </body>
 </html>

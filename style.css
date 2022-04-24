@@ -319,7 +319,12 @@ color: rgb(83, 83, 83);
 
 .col-1-contact h1{
     font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #333;
+    font-weight: 400;
 }
+
+
 
 .col-1-contact p{
     text-decoration: line-through;
@@ -612,7 +617,7 @@ margin: 10px 0px;
     border-radius: 5px;
     margin-left: -10px;
     font-family: "Roboto", "Helvetica Neue", helvetica, arial, sans-serif;
-
+    z-index: 100;
 }
 .similar-product-4 > ul{
     margin-top: 14px;
@@ -660,7 +665,7 @@ margin: 10px 0px;
 
 .footer-location-content,
 .footer-line{
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #acacac;
 }
 
 .no-border{
@@ -700,6 +705,13 @@ margin: 10px 0px;
     font-size: 20px;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 500;
+}
+
+.footer-list li a:hover{
+    color: #ff1200;
+}
+.title-footer-2 li a:hover{
+    color: #ff1200;
 }
 .title-footer-2{
     margin-top: 26px;
@@ -747,4 +759,73 @@ margin: 10px 0px;
 
 .footer-end > .grid >.row > .end-text{
     right: 0;
+}
+.footer-btn-all > .footer-btn1 > a:hover{
+    border: 2px solid #000000;
+}
+
+.similar-product-4 > .hover-img > img:hover{
+width: 100px;
+height: 70px;
+}
+.img-position > a > img{
+position: relative;
+}
+
+.hover-img{
+position: absolute;
+width: 300px;
+height: auto;
+z-index: 1000;
+display: none;
+}
+
+.similar-product-4 ul .img-position a:hover
+.hover-img{
+   display: block;
+}
+.hover-img > .title-hover > h3{
+   min-width: 300px;
+    background-color: #ff1200;
+    color: #f8f8f8;
+    font-family: "Roboto", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.hover-img > .text-hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: #000000 solid 1px;
+    padding: 4px;
+}
+.col-1-img::before{
+    content: "Giảm giá";
+    background-color: #ff1200;
+    color: #f8f8f8;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    font-family: "Roboto", "Helvetica Neue", helvetica, arial, sans-serif;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+
+.col-1-img i{ 
+    transform: translate(460px, -460px);
+    font-size: 24px;
+}
+
+#exzoom{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
 }
